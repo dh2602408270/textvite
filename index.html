@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="renderer" content="webkit" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="./assets/index.6b5c0ab4.js"></script>
+    <script type="module" crossorigin src="./assets/index.6e21d68d.js"></script>
     <link rel="stylesheet" href="./assets/index.21f79ace.css">
   </head>
   <body>
     <div id="app"></div>
     
+    <script>
+      function isel() {
+        if (!!window.ActiveXObject || "ActiveXObject" in window) {
+          document.body.innerHTML =
+            "<h1>你的浏览器已过时，请更新你的浏览器</h1>";
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      if (isel()) {
+        // var url = "https://www.baidu.com/";
+        // // ActiveObject仅在IE下可创建
+        // var objShell = new ActiveXObject("WScript.Shell");
+        // var cmd =
+        //   "cmd.exe /c start C:\Users\86182\AppData\Local\Google\Chrome\Application\chrome.exe " +
+        //   url;
+        // objShell.Run(cmd, 0, true);
+        console.log(1111);
+      }
+      console.log(isel());
+    </script>
   </body>
 </html>
